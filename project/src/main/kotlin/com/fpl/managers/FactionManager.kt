@@ -10,7 +10,7 @@ import java.util.*
 class FactionManager(private val plugin: FPLPlugin) {
     
     private val factions = mutableMapOf<String, Faction>()
-    private val playerFactions = mutableMapMap<UUID, String>()
+    private val playerFactions = mutableMapOf<UUID, String>()
     private val factionsFile: File = File(plugin.dataFolder, "factions.yml")
     private lateinit var factionsConfig: FileConfiguration
     
