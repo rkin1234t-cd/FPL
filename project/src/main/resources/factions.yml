@@ -1,0 +1,22 @@
+# Конфигурация фракций
+# Автоматически создается при первом запуске
+
+factions: {}
+
+# Пример структуры:
+# factions:
+#   police:
+#     displayName: "Полиция"
+#     type: "usually"
+#     leader: "uuid-here"
+#     members:
+#       - uuid: "player-uuid"
+#         rank: 1
+#         specialization: null
+#     ranks:
+#       - id: 1
+#         name: "leader"
+#         displayName: "Начальник полиции"
+#         status: "leader"
+#         permissions: []
+#         salary: 1000.0

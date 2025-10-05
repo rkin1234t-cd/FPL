@@ -1,0 +1,54 @@
+# Конфигурация FPL Plugin
+
+# Основные настройки
+settings:
+  # Язык плагина (ru/en)
+  language: "ru"
+  
+  # Автосохранение данных (в минутах)
+  auto-save-interval: 5
+  
+  # Использовать ли экономику
+  economy-enabled: true
+  
+  # Префикс сообщений
+  message-prefix: "§6[FPL]§r "
+
+# Настройки модулей
+modules:
+  # Модуль рейдов/событий
+  raid:
+    enabled: true
+    max-raids: 5
+  
+  # Модуль обучения
+  train:
+    enabled: true
+    default-training-text: |
+      Добро пожаловать в нашу фракцию!
+      Здесь будет текст обучения для новичков.
+      Замените этот текст на актуальную информацию.
+
+# Настройки уведомлений
+notifications:
+  # Глобальные сообщения
+  global-messages:
+    leader-change: true
+    faction-creation: true
+  
+  # Звуки уведомлений
+  sounds:
+    promotion: "ENTITY_PLAYER_LEVELUP"
+    demotion: "BLOCK_NOTE_BLOCK_BASS"
+    invite: "ENTITY_EXPERIENCE_ORB_PICKUP"
+
+# Настройки экономики
+economy:
+  # Стартовый баланс казны новой фракции
+  starting-balance: 0.0
+  
+  # Максимальный баланс казны
+  max-balance: 1000000.0
+  
+  # Комиссия за снятие средств (в процентах)
+  withdrawal-fee: 5.0
