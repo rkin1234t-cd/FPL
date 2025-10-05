@@ -1,0 +1,44 @@
+name: FPL
+version: '1.0.0'
+main: com.fpl.FPLPlugin
+api-version: 1.20
+depend:
+  - LuckPerms
+soft-depend:
+  - PlaceholderAPI
+
+commands:
+  fps:
+    description: "Открыть главное меню организации"
+    usage: "/fps"
+  f:
+    description: "Основные команды фракций"
+    usage: "/f <subcommand>"
+    aliases: [faction]
+  ud:
+    description: "Управление фракциями (администрация)"
+    usage: "/ud [фракция] [команда]"
+    permission: fpl.admin
+
+permissions:
+  fpl.admin:
+    description: "Полный доступ к административным функциям"
+    default: op
+  fpl.license.give:
+    description: "Выдавать лицензии"
+    default: false
+  fpl.heal:
+    description: "Лечить игроков"
+    default: false
+  fpl.arrest:
+    description: "Арестовывать и освобождать"
+    default: false
+  fpl.shtraf:
+    description: "Выписывать штрафы"
+    default: false
+  fpl.setstars:
+    description: "Выдавать уровни розыска"
+    default: false
+  fpl.license.check:
+    description: "Проверять лицензии"
+    default: false
